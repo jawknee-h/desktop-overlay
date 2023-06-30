@@ -1,6 +1,8 @@
 # desktop-overlay
 Some code which allows an openFrameworks window to be transparent, always render on top of everything else, and click-through. Only tested on Windows.
 
+![](https://github.com/jawknee-h/desktop-overlay/blob/main/overlay_demo.gif)
+
 ## `main.cpp`
 First, open your `main.cpp` file.
 ## 1) Include the Desktop Window Manager API `dwmpapi.h` at the top of the file.
