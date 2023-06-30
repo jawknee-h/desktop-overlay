@@ -1,7 +1,7 @@
 # desktop-overlay
 Some code which allows an openFrameworks window to be transparent, always render on top of everything else, and click-through. Only tested on Windows.
 
-## main.cpp
+## `main.cpp`
 First, open your `main.cpp` file.
 ## 1) Include the Desktop Window Manager API `dwmpapi.h` at the top of the file.
 ```c++
@@ -36,6 +36,9 @@ makeWindowOnTop(wnd);
 
 Altogether, a basic `main.cpp' should look something like this.
 ```c++
+#include "ofMain.h"
+#include "ofApp.h"
+
 #include <dwmapi.h> // For transparent topmost window
 #pragma comment (lib, "dwmapi.lib") //...
 
@@ -67,3 +70,11 @@ int main()
 }
 
 ```
+
+## `ofApp.cpp`
+Open `ofApp.cpp`. At the start of the `draw()` function, clear the canvas.
+```c++
+ofClear(ofColor(0, 0, 0, 0));
+```
+
+That should be it. Hope it works!
