@@ -1,5 +1,5 @@
-# desktop-overlay
-Some code which allows an openFrameworks window to be transparent, always render on top of everything else, and click-through. Only tested on Windows.
+# openFrameworks overlay window
+Some code which allows an openFrameworks window to be transparent, always render on top of everything else, and click-through. _**Only tested on Windows**_.
 
 ![](https://github.com/jawknee-h/desktop-overlay/blob/main/overlay_demo.gif)
 
